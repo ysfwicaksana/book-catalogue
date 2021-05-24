@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+.header {
+  font-size: 40px;
+  background-color: #f7f9fc;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.title1,
+.title3 {
+  color: #005fed;
+}
+.title2 {
+  color: #e0c307;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: -10px;
+}
+
+nav {
+  background-color: #005fed;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #f7f9fc;
+}
+nav a:hover {
+  color: #f7f9fc;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 80%;
+}
+
+.date-information {
+  float: left;
+}
+
+.select-date-bestseller {
+  float: right;
+  display: inline;
+}
+
+.search {
+  background-color: #005fed;
+  padding: 3px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#bestseller > article {
+  display: flex;
+}
+
+.best-seller-category {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.best-seller-book-content {
+  border: 1px solid #f7f9fc;
+  border-radius: 5px;
+  margin: 5px;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.best-seller-book-content:hover {
+  border: 2px solid #005fed;
+}
+
+.best-seller-book-content > img {
+  width: 100px;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.best-seller-book-content > h4 {
+  color: gray;
+}
+
+aside {
+  float: right;
+  width: 20%;
+  padding-left: 10px;
+}
+
+.img-profile {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  background-color: #212121;
+  color: white;
+}
+
+.profile {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#tentang-kami {
+  text-align: left;
+}
+
+.external-link {
+  text-decoration: none;
+  color: #005fed;
+}
+
+.external-link:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .select-date-bestseller {
+    width: 100%;
+  }
+}

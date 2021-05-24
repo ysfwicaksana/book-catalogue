@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#caribuku</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <span class="title1">#car</span><span class="title2">i</span><span class="title3">buku</span>
+            <p class="description">Situs rekomendasi buku berdasarkan New York Times Best Seller</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#best-seller">Best Seller!</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <section class="best-seller" id="best-seller">
+                <h2>Best Seller!</h2> 
+                    <p>Tanggal best seller merupakan tanggal publikasi terdekat dengan yang anda tentukan. Apabila anda tidak menentukan maka akan ditampilkan buku best seller sesuai tanggal publikasi saat ini</p>
+                    <div class="date-information">
+                        Tanggal best seller: <span id="best-seller-date"></span>
+                    </div>
+                    <div class="select-date-bestseller">
+                        <label for="best-seller">Pilih tanggal best seller:</label>
+                        <input type="date" id="pick-date"/>
+                        <button class="search" onclick="getDate()">Cari</button>
+                    </div>
+                    <br/>
+
+                <article class="book-article">
+                </article>
+            </section>
+            
+
+            <section id="tentang">
+                <h2>Tentang</h2>
+                <p>Data buku bersumber dari <a href="https://developer.nytimes.com" class="external-link">New York Times API</a>.</p>
+            </section>
+        </div>
+
+        <aside class="profile">
+            <h2>Tentang Saya</h2>
+            <table>
+                <figure>
+                    <img src="assets/img/ysfwicaksana.jpg" alt="Yusuf Eka Wicaksana" class="img-profile">
+                    <figcaption>Yusuf Eka Wicaksana</figcaption>
+                </figure>
+                
+            </table>
+                        
+        </aside>
+       
+    </main>
+
+   
+
+    <footer>
+            <h2>#caribuku &copy; 2021</h2>
+            <p>Situs rekomendasi buku berdasarkan New York Times Best Seller</p>
+       
+    </footer>
+    <script src="assets/js/api.js"></script>
+</body>
+</html>
